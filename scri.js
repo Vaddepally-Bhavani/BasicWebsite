@@ -9,18 +9,17 @@ function fun(){
     var Consultdoctor=document.getElementById("Consultdoctor").value;  
     var City=document.getElementById("City").value;  
     var Zipcode=document.getElementById("Zipcode").value;   
-if(Firstname=="")alert("The firstname is empty");  
-if(Lastname=="")alert("The Lastname is empty");
-if(Aadharnumber=="")alert("The Aadharnumber is empty");
-if(Phonenumber=="")alert("The Phonenumberis empty");
-// if(Appointmentdate=="")alert("The Appointmentdate is empty");
-// if(Appointmnettime=="")alert("The Appointmnettime is empty");
-if(Healthconcern=="")alert("The Healthconcern is empty");
-if(Consultdoctor=="")alert("The Consultdoctor is empty");
-if(City=="")alert("The City is empty");
-if(Zipcode=="")alert("The Zipcode is empty");
-g();``
+if(Firstname=="" || Lastname==""||Aadharnumber==""||Phonenumber==""||Healthconcern==""||Consultdoctor==""||City==""||Zipcode==""){
+   console.log("if")
+    alert("enter all values")
+}else{
+    console.log("else");
+    setTimeout(function(){document.location.href = "succes.html"},true);
+}
 }
 function g(){
-    window.location.href="succes.html";
+    setTimeout(function(){document.location.href = "reg.html"},true);
+}
+function gl(){
+    setTimeout(function(){document.location.href = "contacts.html"},true);
 }
